@@ -1,0 +1,31 @@
+/* recursos.css */
+.hero--small{height:180px;display:flex;align-items:center;justify-content:center;background:var(--primary);color:#fff;text-align:center}
+.pdf-grid{
+  display:grid;gap:var(--gap);
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr))
+}
+.pdf-card embed{width:100%;height:300px;border:none;border-radius:var(--radius) var(--radius) 0 0}
+.tools{margin-top:1rem;list-style:inside disc;display:flex;flex-direction:column;gap:.5rem}
+
+.intro-banner {
+  background-color: #429ef5;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.intro-banner__content h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.intro-banner__content p {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.pdf-description {
+  font-size: 0.95rem;
+  color: #333;
+  padding: 0.5rem;
+  text-align: left;
+}

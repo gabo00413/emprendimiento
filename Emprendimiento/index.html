@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>YachaykunaLink – Inicio</title>
+
+  <!-- hojas de estilo -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/index.css">
+
+  <!-- Iconos Font Awesome -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- ajustes rápidos específicos de esta página -->
+  <style>
+  /* ---------- HERO completo ---------- */
+  .hero{
+    position:relative;height:80vh;
+    background:url('img/fondo.jpeg') center/cover no-repeat;
+    display:flex;justify-content:center;align-items:center;text-align:center;color:#fff;
+  }
+  .hero::before{content:"";position:absolute;inset:0;background:rgba(0,0,0,.4);z-index:1}
+  .hero__content{position:relative;z-index:2;animation:fadeIn 1.4s}
+  .hero__content h1{font-size:3rem;font-weight:700;margin:0 0 .3rem}
+  .hero__content p{font-size:1.2rem;font-weight:400}
+
+  @keyframes fadeIn{0%{opacity:0;transform:translateY(-20px)}100%{opacity:1;transform:none}}
+
+  /* ---------- Bienvenida ---------- */
+  .bienvenida{
+    background:#eef5ff;
+    text-align:center;
+    padding:90px 20px 80px;
+    margin-top:-60px;               /* separa más del hero */
+    box-shadow:0 -6px 10px -6px rgba(0,0,0,.08) inset;
+  }
+  .bienvenida h1{font-size:2.6rem;margin-bottom:18px;color:#1e1e1e}
+  .bienvenida p{font-size:1.15rem;color:#333}
+  .resaltado{color:#007bff;font-weight:700}
+
+  /* ---------- ¿Quiénes somos? ---------- */
+  .quienes-somos{
+    display:flex;flex-wrap:wrap;gap:40px;align-items:center;justify-content:space-between;
+    padding:50px clamp(1rem,4vw,60px);
+  }
+  .qs-text{flex:1;min-width:260px}
+  .qs-text h2{font-size:1.9rem;margin-bottom:18px}
+  .qs-text p{font-size:1.05rem;line-height:1.6;color:#333}
+  .qs-img{flex:1;min-width:260px;text-align:center}
+  .qs-img img{max-width:70%;border-radius:12px}        /* 🔹 30 % más pequeña */
+
+  /* ---------- Embajador Digital ---------- */
+  .embajador{
+    display:flex;flex-wrap:wrap;gap:50px;align-items:center;justify-content:space-between;
+    padding:60px clamp(1rem,4vw,60px);
+  }
+  .emb-text{flex:1;min-width:280px}
+  .emb-text h2{font-size:2rem;margin-bottom:20px}
+  .emb-item{display:flex;gap:1rem;margin-bottom:1.7rem}
+  .emb-item i{flex:0 0 auto}
+  .emb-img{flex:1;min-width:280px;text-align:center}
+  .emb-img img{max-width:100%;border-radius:10px;box-shadow:0 4px 14px rgba(0,0,0,.08)}  /* 🔹 más grande y con sombra */
+
+  /* iconos de ventajas */
+  .emb-item:nth-child(1) i{color:#007bff}.emb-item:nth-child(2) i{color:#28a745}.emb-item:nth-child(3) i{color:#ffc107}
+
+  /* responsive */
+  @media(max-width:768px){
+    .hero__content h1{font-size:2.3rem}
+    .hero__content p{font-size:1rem}
+    .bienvenida{padding:70px 15px 60px}
+    .qs-img img{max-width:90%}
+  }
+  </style>
+
+
+</head>
+<body>
+  
+  <header class="header">
+  <div class="header__content">
+    <div class="logo" style="display: flex; align-items: center; gap: 0.5rem;">
+  <img src="img/LogoPuce.png" alt="Logo Extra" >
+  <img src="img/Logo.png" alt="Logo YachaykunaLink" >
+  <span style="font-weight: bold; font-size: 1.1rem;">YachaykunaLink</span>
+</div>
+
+
+    <!-- Botón hamburguesa -->
+    <button id="nav-toggle" class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </button>
+
+    <!-- Menú de navegación -->
+    <ul id="nav-menu" class="nav-menu">
+      <li><a href="index.html" class="nav__link nav__link--active">Inicio</a></li>
+      <li><a href="sections/silabo.html" class="nav__link">Programa</a></li>
+      <li><a href="sections/recursos.html" class="nav__link">Recursos/Tutoriales</a></li>
+      <li><a href="sections/galeria.php" class="nav__link">Galeria</a></li>
+      <li><a href="sections/contacto.html" class="nav__link">Contacto</a></li>
+    </ul>
+  </div>
+</header>
+
+
+
+
+ <!-- HERO -->
+  <section class="hero">
+    <div class="hero__content">
+      <h1>YachaykunaLink</h1>
+      <p>Capacitación en redes sociales para Chugchilán</p>
+    </div>
+  </section>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main>
+    <section class="bienvenida">
+  <h1>Bienvenido</h1>
+  <p>
+    Aprende a usar las redes sociales de forma <strong>responsable</strong> y <strong>creativa</strong>.<br>
+    ¡Descubre nuestras guías y participa en los <span class="resaltado">talleres gratuitos</span>!
+  </p>
+</section>
+
+<!-- ¿Quiénes somos? -->
+    <section class="quienes-somos">
+      <div class="qs-text">
+        <h2>¿Quiénes somos?</h2>
+        <p><strong>YachaykunaLink</strong> es un proyecto educativo que capacita a jóvenes de Chugchilán en el uso
+        responsable, creativo y productivo de las redes sociales. Buscamos formar <strong>embajadores digitales</strong>
+        comprometidos con su comunidad, fortaleciendo su cultura y emprendimientos locales.</p>
+      </div>
+      <div class="qs-img">
+        <img src="img/QuienesSomos.png" alt="Ilustración de capacitaciones en redes sociales">
+      </div>
+    </section>
+
+
+<!-- Embajador Digital -->
+    <section class="embajador">
+      <div class="emb-text">
+        <h2>¿Por qué ser Embajador Digital?</h2>
+
+        <div class="emb-item">
+          <i class="fa-solid fa-laptop-code fa-2x"></i>
+          <div>
+            <h3 style="margin:0">Desarrolla habilidades digitales</h3>
+            <p style="margin:0">Aprende a comunicarte, crear contenido y usar herramientas online.</p>
+          </div>
+        </div>
+
+        <div class="emb-item">
+          <i class="fa-solid fa-users fa-2x"></i>
+          <div>
+            <h3 style="margin:0">Representa a tu comunidad</h3>
+            <p style="margin:0">Comparte tu cultura, ideas y voz con el mundo.</p>
+          </div>
+        </div>
+
+        <div class="emb-item">
+          <i class="fa-solid fa-award fa-2x"></i>
+          <div>
+            <h3 style="margin:0">Accede a oportunidades</h3>
+            <p style="margin:0">Participa en talleres y accede a becas o reconocimientos.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="emb-img">
+        <img src="img/Embajador.png" alt="Embajadores digitales felices">
+      </div>
+    </section>
+
+
+    <!-- Tarjetas resumen -->
+    <section class="section container cards-grid">
+      <div class="card">
+        <h3>Programa</h3>
+        <p>Descubre los temas que cubriremos en la fase virtual.</p>
+        <a href="sections/silabo.html" class="btn">Ver programa</a>
+      </div>
+
+      <div class="card">
+        <h3>Recursos PDF</h3>
+        <p>Descarga guias visuales y plantillas listas para usar.</p>
+        <a href="sections/recursos.html" class="btn">Ir a recursos</a>
+      </div>
+
+      <div class="card">
+        <h3>Galeria</h3>
+        <p>Mira las fotos y videos creados por los estudiantes.</p>
+        <a href="sections/galeria.html" class="btn">Explorar galeria</a>
+      </div>
+    </section>
+
+    <!-- Estadísticas -->
+    <section class="stats section">
+      <h2>Redes Sociales en Ecuador (2025)</h2>
+
+      <div class="stats-grid">
+        <div class="stat">
+          <i class="fa-solid fa-users"></i>
+          <p><span>74 %</span><br>de la población usa redes sociales</p>
+        </div>
+
+        <div class="stat">
+          <i class="fa-solid fa-globe"></i>
+          <p><span>83.7 %</span><br>cuenta con acceso a internet</p>
+        </div>
+
+        <div class="stat">
+          <i class="fa-solid fa-mobile-screen"></i>
+          <p><span>98.8 %</span><br>tiene conexiones móviles activas</p>
+        </div>
+      </div>
+
+      <p class="stats-source">
+        Fuente: “Digital 2025 Global Overview Report”, DataReportal.
+      </p>
+    </section>
+  </main>
+
+  <!-- Plataformas más usadas -->
+  <section class="section container popular-networks">
+    <h2>Plataformas más usadas</h2>
+    <div class="networks-grid">
+      <div class="network">
+        <i class="fa-brands fa-whatsapp"></i>
+        <p>WhatsApp – 94% de penetración</p>
+      </div>
+      <div class="network">
+        <i class="fa-brands fa-instagram"></i>
+        <p>Instagram – 57%</p>
+      </div>
+      <div class="network">
+        <i class="fa-brands fa-facebook-f"></i>
+        <p>Facebook – 56%</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <p>Proyecto YachaykunaLink – PUCE · Colegio Chugchilan</p>
+      <p>Contacto: <a href="mailto:info@yachaykunalink.ec">info@yachaykunalink.ec</a></p>
+    </div>
+  </footer>
+
+ <!-- ÚNICO widget de Dialogflow -->
+<df-messenger
+  intent="WELCOME"
+  chat-title="YachaikunaLink Bot"
+  agent-id="d81e0a8c-cb45-4021-8e7d-d0781263e86e"
+  language-code="es"
+  minimized  
+  chat-icon="false"
+></df-messenger>
+
+<!-- SCRIPTS DE DIALOGFLOW -->
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+
+<!-- JS para abrir/cerrar -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const btn   = document.getElementById('chat-button');
+    const win   = document.getElementById('chat-window');
+    const close = document.getElementById('chat-close');
+
+    btn.addEventListener('click', () => {
+      btn.style.display = 'none';
+      win.style.display = 'flex';
+    });
+    close.addEventListener('click', () => {
+      win.style.display = 'none';
+      btn.style.display = 'flex';
+    });
+  });
+</script>
+
+
+  <!-- JS PARA MENÚ RESPONSIVE -->
+  <script src="main.js" defer></script>
+</body>
+</html>

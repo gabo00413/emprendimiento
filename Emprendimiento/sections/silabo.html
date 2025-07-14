@@ -1,0 +1,152 @@
+<!-- silabo.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sílabo – Qué vas a aprender</title>
+  <link rel="stylesheet" href="../css/silabo.css">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  
+  
+    <header class="header">
+  <div class="header__content">
+    <div class="logo">
+      <img src="../img/LogoPuce.png" alt="Logo Extra" >
+      <img src="../img/Logo.png" alt="Logo YachaykunaLink">
+      <span>YachaykunaLink</span>
+    </div>
+
+    <!-- Botón hamburguesa -->
+    <button id="nav-toggle" class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </button>
+
+    <!-- Menú de navegación -->
+    <ul id="nav-menu" class="nav-menu">
+      <li><a href="../index.html" class="nav__link nav__link--active">Inicio</a></li>
+      <li><a href="../sections/silabo.html" class="nav__link">Programa</a></li>
+      <li><a href="../sections/recursos.html" class="nav__link">Recursos/Tutoriales</a></li>
+      <li><a href="../sections/galeria.php" class="nav__link">Galeria</a></li>
+      <li><a href="../sections/contacto.html" class="nav__link">Contacto</a></li>
+    </ul>
+  </div>
+
+ 
+</header>
+  
+<!-- Franja introductoria -->
+<section class="intro-banner">
+  <div class="intro-banner__content">
+    <h1>Qué vas a aprender con este curso</h1>
+    <p>Lleva la magia de Chugchilán al mundo digital – Conviertete en embajador digital de chugchilan</p>
+  </div>
+</section>
+
+  <main class="content">
+    <section class="cards">
+      <article class="card">
+        <div class="card__icon">📖</div>
+        <h2 class="card__title">Introducción a Redes Sociales</h2>
+        <ul class="card__topics">
+          <li><strong>Conceptos básicos:</strong>  
+            Aprenderás qué son las redes sociales, cómo funcionan y cuáles son las más populares.</li>
+          <li><strong>Importancia para Chugchilán:</strong>  
+            Veremos cómo una buena estrategia digital puede mostrar el patrimonio cultural y atraer turismo.</li>
+          <li><strong>Tipos de contenido:</strong>  
+            Conocerás formatos (texto, imágenes, video, stories) y cuándo usarlos según tu audiencia.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="card__icon">👤</div>
+        <h2 class="card__title">Creación de Perfiles y Herramientas</h2>
+        <ul class="card__topics">
+          <li><strong>Guía de perfiles:</strong>  
+            Cómo configurar biografía, foto y enlaces para transmitir identidad local.</li>
+          <li><strong>Herramientas clave:</strong>  
+            Introducción a <em>Canva</em> para gráficos y <em>CapCut</em> para edición de video.</li>
+          <li><strong>Buenas prácticas:</strong>  
+            Uso de plantillas y recursos gratuitos para mantener consistencia visual.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="card__icon">📝</div>
+        <h2 class="card__title">Tipos de Contenido y Narrativa</h2>
+        <ul class="card__topics">
+          <li><strong>Formatos eficientes:</strong>  
+            Posts estáticos, carruseles e historias: cuándo y por qué.</li>
+          <li><strong>Storytelling local:</strong>  
+            Cómo contar la historia de Chugchilán en cada publicación.</li>
+          <li><strong>Calendario de contenidos:</strong>  
+            Planificación semanal para mantener el ritmo de publicaciones.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="card__icon">🎥</div>
+        <h2 class="card__title">Producción de Video y Seguridad</h2>
+        <ul class="card__topics">
+          <li><strong>Técnicas de grabación:</strong>  
+            Ángulos, encuadres y sonido con tu teléfono móvil.</li>
+          <li><strong>Edición básica:</strong>  
+            Recortes, transiciones y subtítulos en CapCut.</li>
+          <li><strong>Seguridad digital:</strong>  
+            Protección de la privacidad y configuración de permisos.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="card__icon">🚀</div>
+        <h2 class="card__title">Publicación y Optimización</h2>
+        <ul class="card__topics">
+          <li><strong>Publicar en plataformas:</strong>  
+            Pasos para subir contenido en Instagram y Tiktok.</li>
+          <li><strong>Hashtags y horarios:</strong>  
+            Cómo elegir etiquetas y momentos óptimos para mayor alcance.</li>
+          <li><strong>Descripción efectiva:</strong>  
+            Escritura de títulos y llamadas a la acción que conviertan.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="card__icon">📊</div>
+        <h2 class="card__title">Métricas y Próximos Pasos</h2>
+        <ul class="card__topics">
+          <li><strong>Indicadores básicos:</strong>  
+            Alcance, interacciones y comentarios.</li>
+          <li><strong>Análisis de resultados:</strong>  
+            Uso de herramientas gratuitas para interpretar datos.</li>
+          <li><strong>Mejora continua:</strong>  
+            Ajustes en contenido según el comportamiento de la audiencia.</li>
+        </ul>
+      </article>
+    </section>
+    
+  </main>
+
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <p>Proyecto YachaykunaLink</p>
+      <p><a href="index.html">Volver al inicio</a></p>
+    </div>
+  </footer>
+
+  <!-- ÚNICO widget de Dialogflow -->
+<df-messenger
+  intent="WELCOME"
+  chat-title="YachaikunaLink Bot"
+  agent-id="d81e0a8c-cb45-4021-8e7d-d0781263e86e"
+  language-code="es"
+  minimized  
+  chat-icon="false"
+></df-messenger>
+
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<script src="../main.js" defer></script>
+</body>
+</html>

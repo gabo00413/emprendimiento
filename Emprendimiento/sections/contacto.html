@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto – YachaykunaLink</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    .hero {
+      background-color: #4da4e0;
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    .section {
+      padding: 40px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      background-color: #f8f9fc;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      flex: 1 1 320px;
+      max-width: 500px;
+    }
+    .card h2 {
+      color: #124c86;
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+    }
+    .contact-links a {
+      display: block;
+      margin: 8px 0;
+      color: #1a73e8;
+      text-decoration: none;
+    }
+    .video-yt {
+      width: 100%;
+      height: 270px;
+      border: none;
+      border-radius: 10px;
+    }
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #124c86;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="header__content">
+      <div class="logo">
+        <img src="../img/LogoPuce.png" alt="Logo Extra">
+        <img src="../img/Logo.png" alt="Logo YachaykunaLink">
+        <span>YachaykunaLink</span>
+      </div>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+      <ul id="nav-menu" class="nav-menu">
+        <li><a href="../index.html" class="nav__link">Inicio</a></li>
+        <li><a href="../sections/silabo.html" class="nav__link">Programa</a></li>
+        <li><a href="../sections/recursos.html" class="nav__link">Recursos/Tutoriales</a></li>
+        <li><a href="../sections/galeria.php" class="nav__link">Galeria</a></li>
+        <li><a href="../sections/contacto.html" class="nav__link nav__link--active">Contacto</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <header class="hero">
+    <h1>Contacto y Redes Sociales</h1>
+    <p>Conecta con nosotros y revisa nuestros canales oficiales</p>
+  </header>
+
+  <main class="section">
+    <div class="card">
+      <h2>Canal de YouTube</h2>
+      <iframe class="video-yt" src="https://www.youtube.com/embed/K4Wwit4SZOQ" allowfullscreen></iframe>
+      <div class="contact-links">
+        <a href="https://www.youtube.com/watch?v=K4Wwit4SZOQ" target="_blank">Ver en YouTube</a>
+      </div>
+    </div>
+
+    <!-- Instagram Post -->
+<div class="card" style="flex: 1 1 300px; max-width: 400px; padding: 20px; border-radius: 12px; background-color: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+  <h2 style="color: #124c86;">Instagram Oficial</h2>
+  <p>Últimas publicaciones y eventos en nuestro Instagram:</p>
+  <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DMEnRTSt0Ng/" data-instgrm-version="14" style="margin: 0 auto; max-width: 100%; width: 100%;"></blockquote>
+  <script async src="//www.instagram.com/embed.js"></script>
+  <p style="margin-top: 10px;">
+    <a href="https://www.instagram.com/yachaykunalink_ec/" target="_blank" style="color: #4da4e0;">@yachaykunalink_ec</a>
+  </p>
+</div>
+
+    <div class="card">
+      <h2>Datos de Contacto</h2>
+      <p>Coordinadores: Alex Vivanco, Daniel Carranza y Gabriel Naranjo</p>
+      <div class="contact-links">
+        <a href="mailto:info@yachaykunalink.ec">danycv2022@gmail.com</a>
+        <span>WhatsApp: +593 98 401 7687</span>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 YachaykunaLink</p>
+  </footer>
+
+  <df-messenger
+    intent="WELCOME"
+    chat-title="YachaikunaLink Bot"
+    agent-id="d81e0a8c-cb45-4021-8e7d-d0781263e86e"
+    language-code="es"
+    minimized
+    chat-icon="false">
+  </df-messenger>
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+</body>
+</html>

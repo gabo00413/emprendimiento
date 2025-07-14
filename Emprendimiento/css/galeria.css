@@ -1,0 +1,182 @@
+/* galeria.css */
+
+.hero--small.galeria-intro {
+  background-color: var(--primary);
+  color: #fff;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.hero--small.galeria-intro h1 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.hero--small.galeria-intro .intro-text {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #f0f0f0;
+}
+
+/* Grilla para fotos */
+.gallery-grid.fotos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--gap);
+  margin-top: 2rem;
+}
+
+/* Grilla para videos */
+.gallery-grid.videos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: var(--gap);
+  margin-top: 0rem;
+}
+
+/* Tarjeta general */
+.gallery-card {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  box-shadow: 0 4px 12px var(--card-shadow);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.gallery-card:hover {
+  transform: translateY(-4px);
+}
+
+.gallery-card img,
+.gallery-card video {
+  width: 100%;
+  display: block;
+  border-bottom: 1px solid #eee;
+}
+
+/* Pie de imagen/video */
+.gallery-card figcaption {
+  padding: 1rem;
+  font-size: 0.95rem;
+  color: var(--fg);
+}
+
+/* Video */
+.gallery-card video {
+  border-radius: 0;
+  outline: none;
+  background-color: #000;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .gallery-grid.fotos {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-grid.videos {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Titulo intermedio en franja azul */
+.hero--section {
+  background-color: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 2rem;
+  border-radius: var(--radius);
+}
+
+.hero--section h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-subtext {
+  font-size: 1.2rem;
+  color: #e0e0e0;
+  margin: 0;
+}
+
+.hero--small.galeria-intro {
+  background-color: var(--primary);
+  color: #fff;
+  padding: 0.5rem 1rem 1.5rem;
+  text-align: center;
+}
+
+
+/* ─── Alinear el texto de todas las tarjetas desde el mismo punto ─── */
+.gallery-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery-card figcaption {
+  min-height: 160px; /* ajusta este valor según lo que observes en tus tarjetas */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+
+/* ─── Titulo “Fotos” con icono y estilo más llamativo ─── */
+.gallery-wrap > h3 {
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin: 0rem 0 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--primary);
+}
+
+.gallery-wrap > h3::before {
+  content: "📸";
+  font-size: 1.8rem;
+}
+
+.gallery-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.gallery-card figure {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.gallery-card figcaption {
+  margin-top: auto;
+}
+
+
+.gallery-grid.videos {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.modificar-btn {
+  margin-top: 2rem; /* Aumenta este valor si hace falta */
+  margin-bottom: 2rem; /* Agrega este margen inferior para que no quede pegado al borde */
+}
+
+.btn {
+  background-color: #f8a100;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #d98700;
+}

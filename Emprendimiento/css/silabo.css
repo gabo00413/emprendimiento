@@ -1,0 +1,149 @@
+/* silabo.css */
+:root {
+  --bg: #fafafa;
+  --fg: #333;
+  --primary: #4a90e2;       /* azul original */
+  --accent: #f5a623;        /* naranja que combina con el azul */
+  --card-bg: #fff;
+  --card-shadow: rgba(0,0,0,0.05);
+  --gap: 1.5rem;
+  --radius: 8px;
+  --font: 'Arial', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--fg);
+  line-height: 1.5;
+  padding-top: 3.5rem;
+}
+
+.nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  background: var(--card-bg);
+  box-shadow: 0 1px 4px var(--card-shadow);
+  z-index: 10;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: center;
+  gap: var(--gap);
+  padding: 0.75rem 1rem;
+  list-style: none;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: var(--fg);
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  transition: background .2s, color .2s;
+}
+
+.nav__link:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
+.nav__link--active {
+  background: var(--primary);
+  color: #fff;
+}
+
+.hero {
+  text-align: center;
+  padding: var(--gap) 1rem;
+  background: var(--primary);
+  color: #fff;
+  margin-bottom: var(--gap);
+}
+
+.hero__title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero__subtitle {
+  opacity: 0.9;
+}
+
+.content {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1rem 2rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--gap);
+}
+
+.card {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  box-shadow: 0 2px 8px var(--card-shadow);
+  padding: var(--gap);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.card__icon {
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+.card__title {
+  font-size: 1.25rem;
+  color: var(--primary);
+}
+
+.card__topics {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.card__topics li {
+  font-size: 0.95rem;
+}
+
+.card__topics strong {
+  color: var(--fg);
+}
+
+.intro-banner {
+  background-color: #429ef5; /* celeste */
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.intro-banner__content h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.intro-banner__content p {
+  font-size: 1.1rem;
+  margin: 0;
+}
